@@ -1,0 +1,23 @@
+students = {
+    "Benjamin":"23",
+    "Victor":"50",
+    "Davis":"40",
+    "Mavis":"50",
+    "Tatenda":"70"
+         }
+print('[STUDENT MARKS]')
+for student in students:
+    print(students[student])
+
+highest_mark = 0
+top_student =""
+
+#finding the student with the highest mark
+for student in students:
+    mark =int(students[student])
+
+    if mark > highest_mark:
+        highest_mark = mark
+        top_student = student
+
+print("THE BEST STUDENT IS:", student)
